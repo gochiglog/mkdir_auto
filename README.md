@@ -18,7 +18,7 @@
 
 - `data/cache/`  
   - キャッシュデータを保存するためのディレクトリ。
-  - ex). `.pickle`
+  - ex). `.pickle`等を格納する
 
 - `discard/`  
   - 一時的に不要なファイルや削除予定のデータを保存するディレクトリ。
@@ -31,6 +31,9 @@
 
 - `resources/`  
   - 設定ファイルや画像、テンプレートなどのリソースを格納するディレクトリ。
+
+- `test/`  
+  - プロジェクトの任意のテストファイルを格納。
 
 - `src/`  
   - プロジェクトのソースコードを格納するディレクトリ。
@@ -45,7 +48,7 @@
 - `README.md`  
   - プロジェクトの概要や利用方法を記載するファイル。
 
-※ 各ファイルは空の状態で作成されます。
+※ .gitignoreを除き空の状態で作成されます。
 
 ---
 
@@ -54,12 +57,20 @@
 - Python 3.x がインストールされていること
 
 ### **2. 実行手順**
-#### **① スクリプトのダウンロード**
-リポジトリをクローンまたはスクリプト(mkdir_auto.py)をダウンロードしてください。
-
+#### **① リポジトリのクローン**
+作成したいプロジェクトディレクトリに移動してリポジトリをクローンしてください。
 ```sh
+cd <任意のプロジェクトファイル>
 git clone https://github.com/gochiglog/mkdir_auto.git
-cd mkdir_remote
+```
+#### **② mkdir_auto.pyを実行**
+```sh
+python python ./mkdir_auto/src/mkdir_auto.py
+```
+以下が表示されれば成功です。
+```sh
+Moved mkdir_auto to ./bin/mkdir_auto
+Project structure created successfully!
 ```
 
 
