@@ -65,7 +65,7 @@ git clone https://github.com/gochiglog/mkdir_auto.git
 ```
 #### **② mkdir_auto.pyを実行**
 ```sh
-python python ./mkdir_auto/src/mkdir_auto.py
+python ./mkdir_auto/src/mkdir_auto.py
 ```
 以下が表示されれば成功です。
 ```sh
