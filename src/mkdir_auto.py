@@ -11,6 +11,7 @@ base_dirs = [
     "resources",
     "src",
     "test",
+    "lib",
     "venv"
 ]
 
@@ -35,6 +36,7 @@ discard/
 logs/
 resources/
 test/
+lib/
 venv/
 
 # 一時ファイル
